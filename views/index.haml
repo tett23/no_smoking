@@ -1,0 +1,15 @@
+!!! 5
+%html{:lang => "ja"}
+  %head
+    %meta{:charset => "UTF-8"}
+    %title 禁煙
+  %body
+    %h1 禁煙
+
+    %a{href: '/smoking'}
+      吸った
+
+    %ul
+      -@stat.each do |date, count|
+        %li="#{date}: #{count}"
+
